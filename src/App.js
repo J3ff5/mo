@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 import {
   Container,
@@ -20,88 +20,26 @@ export default function App() {
   const i = 'Por isso fiz esse singelo site'
   const j = 'I love u <3'
 
+  const text = [a, b, c, d, e, f, g, h, i, j]
+
   function changeText(){
-    if (count === 9) {
-      setCount(0)
+    const actualText = text[count]
+    if(count < text.length){
+      return actualText
     } else {
-      setCount(count + 1)
+      setCount(0)
+      return actualText
     }
   }
 
-
   return (
     <>
-      {
-        count === 0 &&
-        <TextContainer>
-          <h1>{a}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 1 &&
-        <TextContainer>
-          <h1>{b}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 2 &&
-        <TextContainer>
-          <h1>{c}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 3 &&
-        <TextContainer>
-          <h1>{d}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 4 &&
-        <TextContainer>
-          <h1>{e}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 5 &&
-        <TextContainer>
-          <h1>{f}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 6 &&
-        <TextContainer>
-          <h1>{g}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 7 &&
-        <TextContainer>
-          <h1>{h}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 8 &&
-        <TextContainer>
-          <h1>{i}</h1>
-        </TextContainer>
-      }
-
-      {
-        count === 9 &&
-        <TextContainer>
-          <h1>{j}</h1>
-        </TextContainer>
-      }
       <TextContainer>
-      <button onClick={() => changeText()}>Me clique</button>
+        <h1>{changeText()}</h1>
+      </TextContainer>
+
+      <TextContainer>
+        <button onClick={() => setCount(count + 1)}>Me clique</button>
       </TextContainer>
     </>
   );
