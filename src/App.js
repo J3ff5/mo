@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import {
   Container,
   TextContainer,
-} from './stytes'
+} from './styles'
 
 export default function App() {
 
