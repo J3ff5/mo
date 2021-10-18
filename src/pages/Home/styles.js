@@ -18,11 +18,10 @@ export const TextContainer = styled.div`
 `;
 
 export const Image = styled.div`	
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: ${props => props ? props.color : '#f5f5f5'};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: ${props => props ? props.color : '#f5f5f5'};
 `;
