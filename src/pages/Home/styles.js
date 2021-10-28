@@ -24,4 +24,5 @@ export const Image = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${props => props ? props.color : '#f5f5f5'};
+  transition: background-color 1s ease-in;
 `;
