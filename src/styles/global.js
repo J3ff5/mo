@@ -11,4 +11,5 @@ export const GlobalStyle = styled.div`
     text-align: center;
     padding: 0;
     margin: 0;
+    cursor: url('https://image.flaticon.com/icons/png/32/742/742376.png'), auto;
 `;
