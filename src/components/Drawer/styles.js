@@ -7,3 +7,10 @@ export const DrawerStyles = styled.div`
     display: flex;
     justify-content: center;
 `;
+
+export const Cat = styled.img`
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    bottom: 10px;
+`;
