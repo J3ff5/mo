@@ -1,12 +1,12 @@
 import React from "react";
 import Routes from './Routes'
-import Drawer from "./components/Drawer";
 import { GlobalStyle } from "./styles/global";
+import AppBarComponent from "./components/AppBarComponent";
 
 export default function App() {
   return (
     <GlobalStyle>
-      <Drawer />
+      <AppBarComponent />
       <Routes />
     </GlobalStyle>
   );

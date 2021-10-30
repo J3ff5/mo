@@ -7,7 +7,6 @@ import { text } from '../../constants/textos'
 
 export default function App() {
 
-  const [count, setCount] = useState()
   const [color, setColor] = useState()
   const [changeText, setChangeText] = useState(0)
 
