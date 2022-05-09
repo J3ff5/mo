@@ -15,4 +15,5 @@ export const TextContainer = styled.div`
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  flex-direction: column;
 `;
