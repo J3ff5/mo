@@ -46,7 +46,7 @@ export default function App() {
 		<Container color={color} onClick={() => {}}>
 			<TextContainer onClick={() => getCatPicture()}>
 				{/* <h1>{text[changeText]}</h1> */}
-				<h1>Foto de gato</h1>
+				<h1>Clique aqui e veja um gato</h1>
         <img src={catPicture} alt="gato" width={500} height={500} />
 			</TextContainer>
 		</Container>
